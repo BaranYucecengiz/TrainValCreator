@@ -20,7 +20,6 @@ def shuffleAndWriteVal(path, totVal):
 
 parser = argparse.ArgumentParser(description="Automatically train.txt and val.txt builder. Train images may be in different paths. Folder names must be images and labels")
 parser.add_argument('--image_folder', type=str, nargs='+' ,required = True , help='image folder full path')
-parser.add_argument('--output', type=str, required = False, help='output path')	
 parser.add_argument('--validation_rate', type=int, required = False,default = 10, help='validation rate')
 
 args = parser.parse_args()
